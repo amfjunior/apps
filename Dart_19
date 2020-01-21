@@ -1,6 +1,7 @@
 void main() {
-  //final String nome = "Junior";
+  //2 - final String nome = "Junior";
   
+  Pessoa p = Pessoa("Junior");
 
   int a = 1;
   int b = 2;
@@ -11,7 +12,8 @@ void main() {
   int c = Calculadora.soma(a, b);
 
   print("Soma: $c");
-  print("Nome: $nome");
+  print("Nome: ${p.nome}");
+  //2 - print("Nome: $nome");
 }
 
 class Pessoa {
@@ -19,7 +21,7 @@ class Pessoa {
   
   Pessoa(this.nome);
   
-  /*Pessoa(String nome){
+  /*2 - Pessoa(String nome){
     this.nome = nome;
   }*/
   
@@ -31,3 +33,4 @@ class Calculadora {
     return a + b;
   }
 }
+
