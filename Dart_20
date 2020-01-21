@@ -12,7 +12,7 @@ void main() {
   //2 - carros.add(c2);
   //2 - carros.add(c3);
   
-  print("Lista: $carros");
+  print("Lista: $carros, length: ${carros.length}");
   
   for(Carro c in carros){
     print(">> ${c.nome}");
