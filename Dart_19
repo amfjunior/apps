@@ -1,0 +1,33 @@
+void main() {
+  //final String nome = "Junior";
+  
+
+  int a = 1;
+  int b = 2;
+
+  //1 - Calculadora calc = new Calculadora();
+  //1 - int c = calc.soma(a, b);
+
+  int c = Calculadora.soma(a, b);
+
+  print("Soma: $c");
+  print("Nome: $nome");
+}
+
+class Pessoa {
+  String nome;
+  
+  Pessoa(this.nome);
+  
+  /*Pessoa(String nome){
+    this.nome = nome;
+  }*/
+  
+}
+
+class Calculadora {
+  //1 - soma(a, b)
+  static soma(a, b) {
+    return a + b;
+  }
+}
