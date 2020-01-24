@@ -1,0 +1,35 @@
+void main() {
+  
+  Carro c1 = Carro("Fusca");
+  
+  //1 - print("$c1");
+  c1.acelerar(100);
+  c1.abastecer(50);
+ 
+}
+
+class Carro extends Automovel with Combustivel { \\caso tenha mais classes só acrescentar ','
+  String nome;
+  
+  Carro(this.nome);
+  
+  void acelerar(int velocidade){
+    print("Acelerando o com $nome a $velocidade km/h");
+  }
+  
+  String toString(){
+    return nome;
+  }
+}
+
+abstract class Automovel {
+  void acelerar(int velocidade);/*1 - {
+    print("Acelerando o com $velocidade km/h");
+  }*/
+}
+
+class Combustivel {
+  abastecer(int qtd){
+    print("Abastecendo $qtd L"); 
+  }
+}
